@@ -1,8 +1,8 @@
 # VM Lifecycle on GCP and OCI — Tutorial
 
 ## Video
-[GCP Tutorial](https://www.loom.com/share/c1953f1fae2d4a7d99a4deb05a81e646?sid=cc470858-0c6f-46c0-b239-06b1aa59cd0f)
-[OCI Tutorial & Reflection/Comparison of Both](https://www.loom.com/share/3c24d4135e6c402f84176ed27194cdb5?sid=62756d51-d058-4078-8035-3edd5f2a2ebc)
+- [GCP Tutorial](https://www.loom.com/share/c1953f1fae2d4a7d99a4deb05a81e646?sid=cc470858-0c6f-46c0-b239-06b1aa59cd0f)
+- [OCI Tutorial & Reflection/Comparison of Both](https://www.loom.com/share/3c24d4135e6c402f84176ed27194cdb5?sid=62756d51-d058-4078-8035-3edd5f2a2ebc)
 
 ## Prereqs
 - Cloud access to GCP and OCI
@@ -19,18 +19,14 @@
 5. Boot disk: default minimal
 6. Network: default VPC; ephemeral public IP
 
-![GCP create](images/gcp_create.png)
+![GCP Create](images/gcp-create.png)
 
-### Start/Stop
-- Start: <state shows RUNNING>
-- Stop: <state shows TERMINATED/STOPPED>
-
-![GCP running](images/gcp_running.png)
+![GCP Running](images/gcp-running.png)
 
 ### Delete
 - Delete instance and verify no disks/IPs remain
 
-![GCP cleaned](images/gcp_clean.png)
+![GCP Cleaned](images/gcp-cleaned.png)
 
 ---
 
@@ -43,18 +39,14 @@
 5. Public IP: ephemeral
 6. Boot volume: default minimal
 
-![OCI create](images/oci_create.png)
+![OCI Create](images/oci-create.png)
 
-### Start/Stop
-- Start: <state shows RUNNING>
-- Stop: <state shows STOPPED>
-
-![OCI running](images/oci_running.png)
+![OCI Running](images/oci-running.png)
 
 ### Terminate
 - Terminate and delete boot volume; verify cleanup
 
-![OCI cleaned](images/oci_clean.png)
+![OCI Cleaned](images/oci-cleaned.png)
 
 ---
 
