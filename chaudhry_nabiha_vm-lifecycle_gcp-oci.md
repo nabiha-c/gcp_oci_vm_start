@@ -1,8 +1,8 @@
 # VM Lifecycle on GCP and OCI — Tutorial
 
 ## Video
-[GCP Tutorial] (https://www.loom.com/share/c1953f1fae2d4a7d99a4deb05a81e646?sid=cc470858-0c6f-46c0-b239-06b1aa59cd0f)
-[OCI Tutorial & Reflection/Comparison of Both] (https://www.loom.com/share/3c24d4135e6c402f84176ed27194cdb5?sid=62756d51-d058-4078-8035-3edd5f2a2ebc)
+[GCP Tutorial](https://www.loom.com/share/c1953f1fae2d4a7d99a4deb05a81e646?sid=cc470858-0c6f-46c0-b239-06b1aa59cd0f)
+[OCI Tutorial & Reflection/Comparison of Both](https://www.loom.com/share/3c24d4135e6c402f84176ed27194cdb5?sid=62756d51-d058-4078-8035-3edd5f2a2ebc)
 
 ## Prereqs
 - Cloud access to GCP and OCI
@@ -60,10 +60,15 @@
 
 ## Reflections
 ### Similarities
-- <brief bullets>
+- Both platforms require selecting a region/zone  
+- Each offers a free-tier eligible smallest instance (GCP’s e2-micro, OCI’s VM.Standard.E2.1.Micro)  
+- Lifecycle process is the same: create → start → stop → terminate.  
 
 ### Differences
-- <brief bullets>
+- GCP uses **projects** and **machine types**, while OCI uses **compartments** and **shapes**.  
+- GCP defaults to simpler options (ephemeral IPs, smallest boot disk), while OCI shows more advanced controls (boot volume deletion checkbox, multiple free-tier shapes).  
+- GCP’s UI feels simpler with fewer fields, while OCI includes more steps and terminology up front.  
+- SSH access on GCP can be launched directly in the browser, OCI requires uploading your own key 
 
-### Preference (OCI vs GCP) and Why
-- <one short paragraph>
+### My Preference: GCP 
+- I preferred **Google Cloud Platform** because its workflow was simpler for a beginner. The terminology was easier to follow, the console provided a built-in SSH option, and cleanup was quicker since disks and IPs were connected directly to the instance. Overall, GCP gave me a smoother and more beginner-friendly experience compared to OCI.
